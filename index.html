@@ -88,70 +88,59 @@
     <div id="main-layout" class="hidden flex h-screen overflow-hidden">
 
         <!-- Sidebar -->
-        <aside class="hidden md:flex flex-col w-64 bg-white border-r border-gray-200">
-            <div class="flex flex-col items-center justify-center h-24 border-b border-gray-200 px-4 py-4">
-                <img src="https://res.cloudinary.com/dbpyjdqt2/image/upload/kase-1-scaled_u5ygsl.jpg" alt="KASE Logo"
-                    class="h-20 mb-2">
-                <h2 class="text-sm font-bold text-kase-800 tracking-wide uppercase">Assessment Portal</h2>
-            </div>
-            <nav class="flex-1 overflow-y-auto py-4 px-3 space-y-1">
-                <a href="#" onclick="showSection('dashboard')"
-                    class="nav-link group flex items-center px-3 py-2.5 text-sm font-medium rounded-lg text-kase-700 bg-kase-50 transition-colors">
-                    <i class="fas fa-tachometer-alt w-6 h-6 mr-3 text-center flex items-center justify-center"></i>
-                    Dashboard
-                </a>
-                <a href="#" onclick="showSection('training')"
-                    class="nav-link group flex items-center px-3 py-2.5 text-sm font-medium rounded-lg text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors">
-                    <i class="fas fa-chalkboard-teacher w-6 h-6 mr-3 text-center flex items-center justify-center"></i>
-                    Training Results
-                </a>
-                <a href="#" onclick="showSection('add-assessment')"
-                    class="nav-link group flex items-center px-3 py-2.5 text-sm font-medium rounded-lg text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors">
-                    <i class="fas fa-plus-circle w-6 h-6 mr-3 text-center flex items-center justify-center"></i>
-                    Add Assessment
-                </a>
+       <aside class="hidden md:flex flex-col w-64 bg-white border-r border-gray-200">
+    <div class="flex flex-col items-center justify-center border-b border-gray-200 px-4 py-6">
+        <img src="https://res.cloudinary.com/dbpyjdqt2/image/upload/kase-1-scaled_u5ygsl.jpg" alt="KASE Logo"
+            class="h-28 w-auto mb-4 object-contain"> <h2 class="text-sm font-bold text-kase-800 tracking-wide uppercase pb-2">Assessment Portal</h2>
+    </div>
 
-                <div class="py-2"></div>
+    <nav class="flex-1 overflow-y-auto py-4 px-3 space-y-1">
+        <a href="#" onclick="showSection('dashboard')"
+            class="nav-link group flex items-center px-3 py-2.5 text-sm font-medium rounded-lg text-kase-700 bg-kase-50 transition-colors">
+            <i class="fas fa-tachometer-alt w-6 h-6 mr-3 text-center flex items-center justify-center"></i>
+            Dashboard
+        </a>
+        <a href="#" onclick="showSection('training')"
+            class="nav-link group flex items-center px-3 py-2.5 text-sm font-medium rounded-lg text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors">
+            <i class="fas fa-chalkboard-teacher w-6 h-6 mr-3 text-center flex items-center justify-center"></i>
+            Training Results
+        </a>
+        <a href="#" onclick="showSection('add-assessment')"
+            class="nav-link group flex items-center px-3 py-2.5 text-sm font-medium rounded-lg text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors">
+            <i class="fas fa-plus-circle w-6 h-6 mr-3 text-center flex items-center justify-center"></i>
+            Add Assessment
+        </a>
 
-                <a href="#" onclick="showSection('placeholder', 'Candidate Registration')"
-                    class="nav-link group flex items-center px-3 py-2.5 text-sm font-medium rounded-lg text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors">
-                    <i class="fas fa-user-plus w-6 h-6 mr-3 text-center flex items-center justify-center"></i>
-                    Candidate Registration
-                </a>
-                <a href="#" onclick="showSection('placeholder', 'Assessors')"
-                    class="nav-link group flex items-center px-3 py-2.5 text-sm font-medium rounded-lg text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors">
-                    <i class="fas fa-user-tie w-6 h-6 mr-3 text-center flex items-center justify-center"></i>
-                    Assessors
-                </a>
-                <a href="#" onclick="showSection('placeholder', 'Assessment Agencies')"
-                    class="nav-link group flex items-center px-3 py-2.5 text-sm font-medium rounded-lg text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors">
-                    <i class="fas fa-building w-6 h-6 mr-3 text-center flex items-center justify-center"></i>
-                    Assessment Agencies
-                </a>
-                <a href="#" onclick="showSection('placeholder', 'Master Assessors')"
-                    class="nav-link group flex items-center px-3 py-2.5 text-sm font-medium rounded-lg text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors">
-                    <i class="fas fa-user-graduate w-6 h-6 mr-3 text-center flex items-center justify-center"></i>
-                    Master Assessors
-                </a>
-                <a href="#" onclick="showSection('placeholder', 'Assessment Centres')"
-                    class="nav-link group flex items-center px-3 py-2.5 text-sm font-medium rounded-lg text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors">
-                    <i class="fas fa-map-marker-alt w-6 h-6 mr-3 text-center flex items-center justify-center"></i>
-                    Assessment Centres
-                </a>
-                <a href="#" onclick="showSection('placeholder', 'Admin Panel')"
-                    class="nav-link group flex items-center px-3 py-2.5 text-sm font-medium rounded-lg text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors">
-                    <i class="fas fa-cogs w-6 h-6 mr-3 text-center flex items-center justify-center"></i>
-                    Admin Panel
-                </a>
-            </nav>
-            <div class="border-t border-gray-200 p-4">
-                <a href="#" onclick="logout()"
-                    class="flex items-center px-3 py-2.5 text-sm font-medium rounded-lg text-red-600 hover:bg-red-50 transition-colors">
-                    <i class="fas fa-sign-out-alt w-6 h-6 mr-3 text-center flex items-center justify-center"></i>
-                    Logout
-                </a>
-            </div>
-        </aside>
+        <a href="#" onclick="showSection('placeholder', 'Candidate Registration')"
+            class="nav-link group flex items-center px-3 py-2.5 text-sm font-medium rounded-lg text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors">
+            <i class="fas fa-user-plus w-6 h-6 mr-3 text-center flex items-center justify-center"></i>
+            Candidate Registration
+        </a>
+        <a href="#" onclick="showSection('placeholder', 'Assessors')"
+            class="nav-link group flex items-center px-3 py-2.5 text-sm font-medium rounded-lg text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors">
+            <i class="fas fa-user-tie w-6 h-6 mr-3 text-center flex items-center justify-center"></i>
+            Assessors
+        </a>
+        <a href="#" onclick="showSection('placeholder', 'Assessment Agencies')"
+            class="nav-link group flex items-center px-3 py-2.5 text-sm font-medium rounded-lg text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors">
+            <i class="fas fa-building w-6 h-6 mr-3 text-center flex items-center justify-center"></i>
+            Assessment Agencies
+        </a>
+        <a href="#" onclick="showSection('placeholder', 'Master Assessors')"
+            class="nav-link group flex items-center px-3 py-2.5 text-sm font-medium rounded-lg text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors">
+            <i class="fas fa-user-graduate w-6 h-6 mr-3 text-center flex items-center justify-center"></i>
+            Master Assessors
+        </a>
+    </nav>
+    
+    <div class="border-t border-gray-200 p-4">
+        <a href="#" onclick="logout()"
+            class="flex items-center px-3 py-2.5 text-sm font-medium rounded-lg text-red-600 hover:bg-red-50 transition-colors">
+            <i class="fas fa-sign-out-alt w-6 h-6 mr-3 text-center flex items-center justify-center"></i>
+            Logout
+        </a>
+    </div>
+</aside>
 
         <!-- Main Content -->
         <div class="flex-1 flex flex-col bg-gray-50 overflow-hidden">
