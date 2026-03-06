@@ -98,7 +98,7 @@ function updateDashboard() {
     document.getElementById('stat-candidates').textContent = state.stats.candidates.toLocaleString();
 
     // Percentages
-    const passPct = Math.round((state.stats.pass / (state.stats.pass + state.stats.fail)) * 100) || 78;
+    const passPct = Math.round((state.stats.pass / (state.stats.pass + state.stats.fail)) * 100) || 91.12;
     const failPct = 100 - passPct;
 
     document.getElementById('stat-pass').textContent = passPct + '%';
@@ -256,4 +256,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.getElementById('assessment-form').addEventListener('submit', handleAssessmentSubmit);
 });
+
 
