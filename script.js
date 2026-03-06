@@ -1,10 +1,10 @@
 // Mock Data for Initial State
 const state = {
     stats: {
-        assessments: 1248,
-        candidates: 32540,
-        pass: 78,
-        fail: 22
+        assessments: 20510,
+        candidates: 25288,
+        pass: 91.12,
+        fail: 8.88
     },
     breakdown: {
         online: 620,
@@ -256,3 +256,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.getElementById('assessment-form').addEventListener('submit', handleAssessmentSubmit);
 });
+
